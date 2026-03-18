@@ -1,0 +1,109 @@
+{
+  "config": {
+    "train_horizon": 8.0,
+    "eval_horizon": 20.0,
+    "eval_dt": 0.05,
+    "reference_dt": 0.001,
+    "observation_stride": 4,
+    "init_state": [
+      2.0,
+      1.0
+    ],
+    "params": {
+      "alpha": 1.0,
+      "beta": 1.0,
+      "gamma": 1.0,
+      "delta": 1.0
+    },
+    "seed": 42,
+    "baseline_train": {
+      "epochs": 1800,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "verbose_every": 300,
+      "physics_weight": 0.01,
+      "initial_weight": 5.0,
+      "collocation_factor": 4
+    },
+    "resnet_train": {
+      "epochs": 1800,
+      "lr": 0.0008,
+      "weight_decay": 0.0,
+      "verbose_every": 300,
+      "physics_weight": 0.01,
+      "initial_weight": 5.0,
+      "collocation_factor": 4
+    },
+    "pinn_train": {
+      "epochs": 2200,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "verbose_every": 400,
+      "physics_weight": 0.05,
+      "initial_weight": 10.0,
+      "collocation_factor": 6
+    },
+    "neural_ode_train": {
+      "epochs": 900,
+      "lr": 0.003,
+      "weight_decay": 1e-05,
+      "verbose_every": 150,
+      "grad_clip": 1.0
+    }
+  },
+  "metrics": [
+    {
+      "model": "Baseline NN",
+      "train_rmse": 0.025703355200440172,
+      "extrap_rmse": 1.8982059252053103,
+      "final_state_error": 2.3295021510463996,
+      "max_state_error": 2.5700729796267603,
+      "max_invariant_drift": 2.6942607175479902
+    },
+    {
+      "model": "ResNet",
+      "train_rmse": 0.003717289034290225,
+      "extrap_rmse": 1.2727516817736908,
+      "final_state_error": 1.8636313201600745,
+      "max_state_error": 1.9590624388259994,
+      "max_invariant_drift": 0.932031891187878
+    },
+    {
+      "model": "PINN",
+      "train_rmse": 0.17559143904176588,
+      "extrap_rmse": 1.0710823648161742,
+      "final_state_error": 1.981898177523189,
+      "max_state_error": 1.981898177523189,
+      "max_invariant_drift": 1.1066829524278168
+    },
+    {
+      "model": "Neural ODE",
+      "train_rmse": 0.6377218348825767,
+      "extrap_rmse": 0.6841615863703179,
+      "final_state_error": 0.8234801367095699,
+      "max_state_error": 1.0286028558679237,
+      "max_invariant_drift": 0.5611976980028097
+    }
+  ],
+  "system_summary": {
+    "equilibria": {
+      "origin": [
+        0.0,
+        0.0
+      ],
+      "coexistence": [
+        1.0,
+        1.0
+      ]
+    },
+    "coexistence_eigenvalues": [
+      "1j",
+      "-1j"
+    ],
+    "nullclines": {
+      "dx_dt_zero_y": 1.0,
+      "dy_dt_zero_x": 1.0
+    },
+    "small_oscillation_period": 6.283185307179586
+  }
+}

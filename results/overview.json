@@ -1,0 +1,160 @@
+{
+  "solver_metrics": [
+    {
+      "method": "euler",
+      "dt": 0.2,
+      "runtime_seconds": 0.0005769000272266567,
+      "mean_state_error": 1.8583785978518172,
+      "max_state_error": 12.520596645889071,
+      "final_state_error": 2.000322073967642,
+      "positivity_violations": 8.0,
+      "max_invariant_drift": 6.950590784917379
+    },
+    {
+      "method": "euler",
+      "dt": 0.1,
+      "runtime_seconds": 0.0010623999987728894,
+      "mean_state_error": 0.6657070488414853,
+      "max_state_error": 2.44966984562316,
+      "final_state_error": 1.7975976291399554,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 1.6054417585764647
+    },
+    {
+      "method": "euler",
+      "dt": 0.05,
+      "runtime_seconds": 0.002867800008971244,
+      "mean_state_error": 0.26890466257689083,
+      "max_state_error": 0.8670326396513637,
+      "final_state_error": 0.854739579289177,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.4676889002934561
+    },
+    {
+      "method": "euler",
+      "dt": 0.025,
+      "runtime_seconds": 0.004290899989427999,
+      "mean_state_error": 0.12111964396118269,
+      "max_state_error": 0.5248262240400515,
+      "final_state_error": 0.5248262240400515,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.18818392860526378
+    },
+    {
+      "method": "rk2",
+      "dt": 0.2,
+      "runtime_seconds": 0.0010466999956406653,
+      "mean_state_error": 0.04309627246966971,
+      "max_state_error": 0.12308223805165491,
+      "final_state_error": 0.12308223805165491,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.009007384298245213
+    },
+    {
+      "method": "rk2",
+      "dt": 0.1,
+      "runtime_seconds": 0.0020671999955084175,
+      "mean_state_error": 0.011227526161688109,
+      "max_state_error": 0.032308096970146874,
+      "final_state_error": 0.032308096970146874,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.0018662983407207179
+    },
+    {
+      "method": "rk2",
+      "dt": 0.05,
+      "runtime_seconds": 0.004124300001421943,
+      "mean_state_error": 0.0028646509623455854,
+      "max_state_error": 0.008343262164436524,
+      "final_state_error": 0.008343262164436524,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.0005083364934801438
+    },
+    {
+      "method": "rk2",
+      "dt": 0.025,
+      "runtime_seconds": 0.00830149999819696,
+      "mean_state_error": 0.0007233810616316204,
+      "max_state_error": 0.0021247345254018515,
+      "final_state_error": 0.0021247345254018515,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.0001321437999544095
+    },
+    {
+      "method": "rk4",
+      "dt": 0.2,
+      "runtime_seconds": 0.0022743000008631498,
+      "mean_state_error": 7.795752902425455e-05,
+      "max_state_error": 0.00021772725592822802,
+      "final_state_error": 0.0002094872468862798,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 3.160669161239582e-05
+    },
+    {
+      "method": "rk4",
+      "dt": 0.1,
+      "runtime_seconds": 0.004401399986818433,
+      "mean_state_error": 4.99314207713254e-06,
+      "max_state_error": 1.4392097120459265e-05,
+      "final_state_error": 1.4392097120459265e-05,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 1.5681473946038693e-06
+    },
+    {
+      "method": "rk4",
+      "dt": 0.05,
+      "runtime_seconds": 0.008992099988972768,
+      "mean_state_error": 3.1617193543519016e-07,
+      "max_state_error": 9.410532471691022e-07,
+      "final_state_error": 9.410532471691022e-07,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 8.583683897001038e-08
+    },
+    {
+      "method": "rk4",
+      "dt": 0.025,
+      "runtime_seconds": 0.017993799992837012,
+      "mean_state_error": 1.989386715168706e-08,
+      "max_state_error": 6.013052381566556e-08,
+      "final_state_error": 6.013052381566556e-08,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 4.99106977969177e-09
+    }
+  ],
+  "ml_metrics": [
+    {
+      "model": "Baseline NN",
+      "train_rmse": 0.025703355200440172,
+      "extrap_rmse": 1.8982059252053103,
+      "final_state_error": 2.3295021510463996,
+      "max_state_error": 2.5700729796267603,
+      "max_invariant_drift": 2.6942607175479902
+    },
+    {
+      "model": "ResNet",
+      "train_rmse": 0.003717289034290225,
+      "extrap_rmse": 1.2727516817736908,
+      "final_state_error": 1.8636313201600745,
+      "max_state_error": 1.9590624388259994,
+      "max_invariant_drift": 0.932031891187878
+    },
+    {
+      "model": "PINN",
+      "train_rmse": 0.17559143904176588,
+      "extrap_rmse": 1.0710823648161742,
+      "final_state_error": 1.981898177523189,
+      "max_state_error": 1.981898177523189,
+      "max_invariant_drift": 1.1066829524278168
+    },
+    {
+      "model": "Neural ODE",
+      "train_rmse": 0.6377218348825767,
+      "extrap_rmse": 0.6841615863703179,
+      "final_state_error": 0.8234801367095699,
+      "max_state_error": 1.0286028558679237,
+      "max_invariant_drift": 0.5611976980028097
+    }
+  ],
+  "solver_table": "| method | dt | max_state_error | final_state_error | max_invariant_drift | runtime_seconds |\n| --- | --- | --- | --- | --- | --- |\n| euler | 0.200000 | 12.520597 | 2.000322 | 6.950591 | 0.000577 |\n| euler | 0.100000 | 2.449670 | 1.797598 | 1.605442 | 0.001062 |\n| euler | 0.050000 | 0.867033 | 0.854740 | 0.467689 | 0.002868 |\n| euler | 0.025000 | 0.524826 | 0.524826 | 0.188184 | 0.004291 |\n| rk2 | 0.200000 | 0.123082 | 0.123082 | 0.009007 | 0.001047 |\n| rk2 | 0.100000 | 0.032308 | 0.032308 | 0.001866 | 0.002067 |\n| rk2 | 0.050000 | 0.008343 | 0.008343 | 0.000508 | 0.004124 |\n| rk2 | 0.025000 | 0.002125 | 0.002125 | 0.000132 | 0.008301 |\n| rk4 | 0.200000 | 0.000218 | 0.000209 | 0.000032 | 0.002274 |\n| rk4 | 0.100000 | 0.000014 | 0.000014 | 0.000002 | 0.004401 |\n| rk4 | 0.050000 | 0.000001 | 0.000001 | 0.000000 | 0.008992 |\n| rk4 | 0.025000 | 0.000000 | 0.000000 | 0.000000 | 0.017994 |",
+  "ml_table": "| model | train_rmse | extrap_rmse | final_state_error | max_invariant_drift |\n| --- | --- | --- | --- | --- |\n| Baseline NN | 0.025703 | 1.898206 | 2.329502 | 2.694261 |\n| ResNet | 0.003717 | 1.272752 | 1.863631 | 0.932032 |\n| PINN | 0.175591 | 1.071082 | 1.981898 | 1.106683 |\n| Neural ODE | 0.637722 | 0.684162 | 0.823480 | 0.561198 |"
+}

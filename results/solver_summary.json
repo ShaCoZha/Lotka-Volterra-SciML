@@ -1,0 +1,170 @@
+{
+  "config": {
+    "methods": [
+      "euler",
+      "rk2",
+      "rk4"
+    ],
+    "dts": [
+      0.2,
+      0.1,
+      0.05,
+      0.025
+    ],
+    "t_max": 20.0,
+    "reference_dt": 0.001,
+    "init_state": [
+      2.0,
+      1.0
+    ],
+    "params": {
+      "alpha": 1.0,
+      "beta": 1.0,
+      "gamma": 1.0,
+      "delta": 1.0
+    }
+  },
+  "system_summary": {
+    "equilibria": {
+      "origin": [
+        0.0,
+        0.0
+      ],
+      "coexistence": [
+        1.0,
+        1.0
+      ]
+    },
+    "coexistence_eigenvalues": [
+      "1j",
+      "-1j"
+    ],
+    "nullclines": {
+      "dx_dt_zero_y": 1.0,
+      "dy_dt_zero_x": 1.0
+    },
+    "small_oscillation_period": 6.283185307179586
+  },
+  "metrics": [
+    {
+      "method": "euler",
+      "dt": 0.2,
+      "runtime_seconds": 0.0005897999799344689,
+      "mean_state_error": 1.8583785978518172,
+      "max_state_error": 12.520596645889071,
+      "final_state_error": 2.000322073967642,
+      "positivity_violations": 8.0,
+      "max_invariant_drift": 6.950590784917379
+    },
+    {
+      "method": "euler",
+      "dt": 0.1,
+      "runtime_seconds": 0.00109039997914806,
+      "mean_state_error": 0.6657070488414853,
+      "max_state_error": 2.44966984562316,
+      "final_state_error": 1.7975976291399554,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 1.6054417585764647
+    },
+    {
+      "method": "euler",
+      "dt": 0.05,
+      "runtime_seconds": 0.002587199996924028,
+      "mean_state_error": 0.26890466257689083,
+      "max_state_error": 0.8670326396513637,
+      "final_state_error": 0.854739579289177,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.4676889002934561
+    },
+    {
+      "method": "euler",
+      "dt": 0.025,
+      "runtime_seconds": 0.004321199987316504,
+      "mean_state_error": 0.12111964396118269,
+      "max_state_error": 0.5248262240400515,
+      "final_state_error": 0.5248262240400515,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.18818392860526378
+    },
+    {
+      "method": "rk2",
+      "dt": 0.2,
+      "runtime_seconds": 0.0010701999999582767,
+      "mean_state_error": 0.04309627246966971,
+      "max_state_error": 0.12308223805165491,
+      "final_state_error": 0.12308223805165491,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.009007384298245213
+    },
+    {
+      "method": "rk2",
+      "dt": 0.1,
+      "runtime_seconds": 0.0021096999989822507,
+      "mean_state_error": 0.011227526161688109,
+      "max_state_error": 0.032308096970146874,
+      "final_state_error": 0.032308096970146874,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.0018662983407207179
+    },
+    {
+      "method": "rk2",
+      "dt": 0.05,
+      "runtime_seconds": 0.0041896999755408615,
+      "mean_state_error": 0.0028646509623455854,
+      "max_state_error": 0.008343262164436524,
+      "final_state_error": 0.008343262164436524,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.0005083364934801438
+    },
+    {
+      "method": "rk2",
+      "dt": 0.025,
+      "runtime_seconds": 0.00868669999181293,
+      "mean_state_error": 0.0007233810616316204,
+      "max_state_error": 0.0021247345254018515,
+      "final_state_error": 0.0021247345254018515,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 0.0001321437999544095
+    },
+    {
+      "method": "rk4",
+      "dt": 0.2,
+      "runtime_seconds": 0.0022587999992538244,
+      "mean_state_error": 7.795752902425455e-05,
+      "max_state_error": 0.00021772725592822802,
+      "final_state_error": 0.0002094872468862798,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 3.160669161239582e-05
+    },
+    {
+      "method": "rk4",
+      "dt": 0.1,
+      "runtime_seconds": 0.004500300012296066,
+      "mean_state_error": 4.99314207713254e-06,
+      "max_state_error": 1.4392097120459265e-05,
+      "final_state_error": 1.4392097120459265e-05,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 1.5681473946038693e-06
+    },
+    {
+      "method": "rk4",
+      "dt": 0.05,
+      "runtime_seconds": 0.009409499994944781,
+      "mean_state_error": 3.1617193543519016e-07,
+      "max_state_error": 9.410532471691022e-07,
+      "final_state_error": 9.410532471691022e-07,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 8.583683897001038e-08
+    },
+    {
+      "method": "rk4",
+      "dt": 0.025,
+      "runtime_seconds": 0.02010069999960251,
+      "mean_state_error": 1.989386715168706e-08,
+      "max_state_error": 6.013052381566556e-08,
+      "final_state_error": 6.013052381566556e-08,
+      "positivity_violations": 0.0,
+      "max_invariant_drift": 4.99106977969177e-09
+    }
+  ]
+}

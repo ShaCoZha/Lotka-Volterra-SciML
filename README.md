@@ -81,12 +81,6 @@ This creates a `results/` directory with:
 - `ml_metrics.csv`
 - `SUMMARY.md`
 
-For a faster smoke test:
-
-```bash
-python run_analysis.py --quick
-```
-
 ### 3. Open the notebook
 
 ```bash

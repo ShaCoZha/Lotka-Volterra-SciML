@@ -7,39 +7,6 @@ This repository studies the Lotka-Volterra predator-prey system from four comple
 3. Machine learning trajectory modeling with a Baseline NN, ResNet, PINN, and Neural ODE.
 4. Reproducible reporting through a notebook plus a script that regenerates all figures and tables.
 
-## Problem Statement
-
-We consider the nonlinear ODE system
-
-\[
-\frac{dx}{dt} = \alpha x - \beta x y, \qquad
-\frac{dy}{dt} = \delta x y - \gamma y
-\]
-
-with positive parameters \(\alpha,\beta,\gamma,\delta\). For the default configuration in this project,
-\[
-\alpha = \beta = \gamma = \delta = 1,
-\]
-so the coexistence equilibrium is \((x^\*, y^\*) = (1, 1)\).
-
-### Main mathematical facts used in the project
-
-- Equilibria: \((0,0)\) and \((\gamma/\delta, \alpha/\beta)\).
-- Jacobian:
-  \[
-  J(x,y)=
-  \begin{bmatrix}
-  \alpha-\beta y & -\beta x \\
-  \delta y & \delta x - \gamma
-  \end{bmatrix}.
-  \]
-- At coexistence, the eigenvalues are purely imaginary \(\lambda = \pm i\sqrt{\alpha\gamma}\), so the linearized system behaves like a center.
-- The system has the conserved quantity
-  \[
-  H(x,y)=\delta x - \gamma \ln x + \beta y - \alpha \ln y,
-  \]
-  which provides a natural diagnostic for numerical and learned trajectories.
-
 ## Repository Structure
 
 ```text
